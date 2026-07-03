@@ -1,18 +1,30 @@
 :root {
-  --bg: #fdfdfc;
+  --bg: #faf9f7;
+  --surface: #ffffff;
   --text: #1f2328;
   --muted: #6a737d;
   --accent: #0b6e4f;
-  --rule: #e6e8ea;
+  --accent-soft: rgba(11, 110, 79, 0.1);
+  --rule: #e6e3dd;
+  --shadow: 0 1px 2px rgba(31, 35, 40, 0.04), 0 8px 24px rgba(31, 35, 40, 0.06);
+  --shadow-hover: 0 2px 4px rgba(31, 35, 40, 0.06), 0 12px 32px rgba(31, 35, 40, 0.12);
+  --glow-a: rgba(11, 110, 79, 0.14);
+  --glow-b: rgba(240, 180, 41, 0.12);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #14181c;
+    --bg: #121417;
+    --surface: #1b1f24;
     --text: #e6e8ea;
     --muted: #9aa4ae;
     --accent: #4cc38a;
+    --accent-soft: rgba(76, 195, 138, 0.12);
     --rule: #2b3138;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.35);
+    --shadow-hover: 0 2px 4px rgba(0, 0, 0, 0.35), 0 12px 32px rgba(0, 0, 0, 0.5);
+    --glow-a: rgba(76, 195, 138, 0.12);
+    --glow-b: rgba(240, 180, 41, 0.06);
   }
 }
 
@@ -24,48 +36,85 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  line-height: 1.6;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  line-height: 1.65;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Soft ambient gradient behind the hero */
+.glow {
+  position: fixed;
+  inset: -20% -20% auto;
+  height: 60vh;
+  background:
+    radial-gradient(40% 55% at 30% 30%, var(--glow-a), transparent 70%),
+    radial-gradient(35% 50% at 70% 20%, var(--glow-b), transparent 70%);
+  filter: blur(40px);
+  pointer-events: none;
+  z-index: -1;
 }
 
 main {
   width: 100%;
   max-width: 640px;
   margin: 0 auto;
-  padding: 4rem 1.5rem 2rem;
+  padding: 5rem 1.5rem 2rem;
   flex: 1;
 }
 
-header {
-  margin-bottom: 3rem;
+.hero {
+  margin-bottom: 3.5rem;
+  animation: rise 0.6s ease-out both;
+}
+
+.avatar {
+  display: block;
+  border-radius: 50%;
+  border: 3px solid var(--surface);
+  box-shadow: var(--shadow);
+  margin-bottom: 1.25rem;
 }
 
 h1 {
   margin: 0;
-  font-size: 2.25rem;
+  font-family: "Fraunces", Georgia, serif;
+  font-size: clamp(2.4rem, 7vw, 3.2rem);
+  font-weight: 700;
   letter-spacing: -0.02em;
+  line-height: 1.1;
 }
 
 .tagline {
-  margin: 0.25rem 0 0;
+  margin: 0.6rem 0 0;
   color: var(--muted);
   font-size: 1.1rem;
 }
 
 section {
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
+  animation: rise 0.6s ease-out 0.15s both;
+}
+
+section + section {
+  animation-delay: 0.3s;
 }
 
 h2 {
-  font-size: 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--muted);
-  border-bottom: 1px solid var(--rule);
-  padding-bottom: 0.4rem;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+#about p {
+  margin: 0;
+  font-size: 1.05rem;
+  max-width: 55ch;
 }
 
 a {
@@ -73,18 +122,65 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
+.cards {
+  display: grid;
+  gap: 0.75rem;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  color: var(--text);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
 }
 
-li {
-  margin-bottom: 0.4rem;
+.card:hover,
+.card:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--accent);
+}
+
+.card svg {
+  flex-shrink: 0;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border-radius: 10px;
+  padding: 0.55rem;
+  width: 40px;
+  height: 40px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+.card-sub {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.card-arrow {
+  margin-left: auto;
+  color: var(--muted);
+  transition: transform 0.15s ease, color 0.15s ease;
+}
+
+.card:hover .card-arrow {
+  transform: translateX(3px);
+  color: var(--accent);
 }
 
 footer {
@@ -92,4 +188,27 @@ footer {
   color: var(--muted);
   font-size: 0.85rem;
   padding: 1.5rem;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero,
+  section {
+    animation: none;
+  }
+
+  .card,
+  .card-arrow {
+    transition: none;
+  }
 }
