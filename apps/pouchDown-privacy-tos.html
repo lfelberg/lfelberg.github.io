@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Privacy Policy — pouchDown</title>
+
+  <meta
+    name="description"
+    content="pouchDown privacy policy + terms of use: your quit-journey data stays on your device. No account required. No tracking, no selling, no ads."
+  />
+
+  <meta property="og:title" content="Privacy Policy + Terms of Use — pouchDown" />
+  <meta
+    property="og:description"
+    content="pouchDown privacy policy: your quit-journey data stays on your device. No account required. No tracking, no selling, no ads."
+  />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <style>
+    :root {
+      --background: #f8faf9;
+      --foreground: #17201d;
+      --card: #ffffff;
+      --primary: #1a73e8;
+      --primary-dark: #395cb8;
+      --primary-light: #e5f4ed;
+      --muted: #66736d;
+      --border: #dce5e0;
+      --secondary: #f2f3fa;
+      --success: #27a56f;
+      --white: #ffffff;
+
+      --shadow: 0 4px 16px rgba(23, 32, 29, 0.06);
+      --shadow-lg: 0 20px 50px rgba(23, 32, 29, 0.12);
+
+      --max-width: 1152px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--background);
+      color: var(--foreground);
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* =========================
+       Header
+       ========================= */
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      width: 100%;
+      border-bottom: 1px solid rgba(220, 229, 224, 0.6);
+      background: rgba(248, 250, 249, 0.82);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+
+    .header-inner {
+      width: 100%;
+      max-width: var(--max-width);
+      height: 64px;
+      margin: 0 auto;
+      padding: 0 24px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* =========================
+       Logo
+       ========================= */
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+
+      color: var(--foreground);
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+    }
+
+    .logo img {
+      width: 36px;
+      height: 36px;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+
+    /* =========================
+       Back button
+       ========================= */
+
+    .back-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+
+      padding: 8px 12px;
+      border-radius: 8px;
+
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 500;
+
+      transition:
+        color 0.2s ease,
+        background-color 0.2s ease;
+    }
+
+    .back-button:hover {
+      color: var(--foreground);
+      background: rgba(220, 229, 224, 0.45);
+    }
+
+    .back-button svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    /* =========================
+       Main content
+       ========================= */
+
+    main {
+      flex: 1;
+      padding: 64px 24px;
+    }
+
+    .content {
+      width: 100%;
+      max-width: 768px;
+      margin: 0 auto;
+    }
+
+    .page-title {
+      margin: 0;
+
+      color: var(--foreground);
+      font-size: 40px;
+      line-height: 1.15;
+      font-weight: 700;
+      letter-spacing: -0.035em;
+    }
+
+    .last-updated {
+      margin: 8px 0 0;
+
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .policy {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      color: var(--foreground);
+      font-size: 14px;
+      line-height: 1.75;
+    }
+
+    .policy-section h2 {
+      margin: 0;
+
+      color: var(--foreground);
+      font-size: 18px;
+      line-height: 1.4;
+      font-weight: 600;
+      letter-spacing: -0.015em;
+    }
+
+    .policy-section p {
+      margin: 8px 0 0;
+      color: var(--muted);
+    }
+
+    .policy-section a {
+      color: var(--primary);
+      transition: opacity 0.2s ease;
+    }
+
+    .policy-section a:hover {
+      text-decoration: underline;
+    }
+
+    /* =========================
+       Footer
+       ========================= */
+
+    footer {
+      border-top: 1px solid var(--border);
+      background: var(--card);
+      padding: 48px 24px;
+    }
+
+    .footer-inner {
+      width: 100%;
+      max-width: var(--max-width);
+      margin: 0 auto;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .footer-links a {
+      transition: color 0.2s ease;
+    }
+
+    .footer-links a:hover {
+      color: var(--foreground);
+    }
+
+    /* =========================
+       App Store button
+       ========================= */
+
+    .app-store-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+
+      padding: 8px 16px;
+      border-radius: 999px;
+
+      background: var(--primary);
+      color: var(--white);
+
+      font-size: 14px;
+      font-weight: 600;
+
+      transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+    }
+
+    .app-store-button:hover {
+      background: var(--primary-dark);
+      transform: translateY(-1px);
+    }
+
+    .app-store-button svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    .copyright {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+      white-space: nowrap;
+    }
+
+    /* =========================
+       Responsive
+       ========================= */
+
+    @media (max-width: 768px) {
+      .header-inner {
+        padding: 0 16px;
+      }
+
+      main {
+        padding: 48px 16px;
+      }
+
+      .page-title {
+        font-size: 32px;
+      }
+
+      footer {
+        padding: 40px 16px;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .footer-links {
+        order: 2;
+      }
+
+      .copyright {
+        order: 3;
+        white-space: normal;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .back-button {
+        padding-right: 4px;
+      }
+
+      .back-button span {
+        display: none;
+      }
+
+      .policy {
+        gap: 32px;
+      }
+
+      .policy-section h2 {
+        font-size: 17px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+
+      <a href="./pouchDown.html" class="logo" aria-label="pouchDown home">
+        <img
+          src="./pouchdown-icon.png"
+          alt="pouchDown app icon"
+          width="36"
+          height="36"
+        />
+        <span>pouchDown</span>
+      </a>
+
+      <a href="./pouchDown.html" class="back-button">
+        <!-- Chevron left -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="m15 18-6-6 6-6"></path>
+        </svg>
+
+        <span>Back to home</span>
+      </a>
+
+    </div>
+  </header>
+
+
+  <!-- Main -->
+  <main>
+    <div class="content">
+
+      <h1 class="page-title">
+        Privacy Policy + Terms of Use
+      </h1>
+
+      <h2 class="policy">
+        Privacy Policy
+      </h2>
+      <p class="last-updated">
+        Last updated: <span id="last-updated"></span>
+      </p>
+
+
+      <div class="policy">
+
+        <p>
+          pouchDown helps you quit nicotine pouches. We believe that
+          journey is personal. This policy explains what we do (and
+          don't do) with your information.
+        </p>
+
+        <section class="policy-section">
+          <h2>No account required</h2>
+          <p>
+            You do not need to create an account, provide an email, or
+            give us your name to use pouchDown. The app works on your
+            device without connecting to a pouchDown account system.
+          </p>
+        </section>
+
+
+        <section class="policy-section">
+          <h2>Your data stays on your device</h2>
+          <p>
+            Your logs, cravings, streaks, and progress
+            information are stored locally on your iPhone. We do not
+            upload, sync, or back up this data to our servers. If you
+            delete the app, that local data is removed.
+          </p>
+        </section>
+
+
+        <section class="policy-section">
+          <h2>We don't sell or share your data</h2>
+          <p>
+            We do not sell, rent, or share personal information with
+            advertisers, data brokers, or other third parties. Because
+            most data is stored locally, we do not have access to it in
+            the first place.
+          </p>
+        </section>
+
+
+        <section class="policy-section">
+          <h2>Analytics and diagnostics</h2>
+          <p>
+            We may use Apple-provided crash reporting or anonymous
+            analytics to understand app stability and usage trends.
+            These tools do not identify you personally and do not access
+            your pouch logs or journal entries.
+          </p>
+        </section>
+
+
+        <section class="policy-section">
+          <h2>App Store purchases</h2>
+          <p>
+            Transactions are handled by Apple through the App Store.
+            We do not collect or store your payment information. Apple
+            shares limited transaction data with us according to their
+            privacy policies.
+          </p>
+        </section>
+
+
+        <section class="policy-section">
+          <h2>Children's privacy</h2>
+          <p>
+            pouchDown is not intended for children under 18. We do not
+            knowingly collect information from children.
+          </p>
+        </section>
+
+
+        <section class="policy-section">
+          <h2>Changes to this policy</h2>
+          <p>
+            We may update this Privacy Policy from time to time. If we
+            make material changes, we will update the date above and
+            notify you through the app or this website.
+          </p>
+        </section>
+
+
+        <section class="policy-section">
+          <h2>Contact us</h2>
+          <p>
+            Questions about privacy?
+            <a href="mailto:lisaemly+pdprivacy@gmail.com">
+              Email us.
+            </a>
+          </p>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+
+      <a href="./pouchDown.html" class="logo" aria-label="pouchDown home">
+        <img
+          src="./pouchdown-icon.png"
+          alt="pouchDown app icon"
+          width="36"
+          height="36"
+        />
+        <span>pouchDown</span>
+      </a>
+
+
+      <nav class="footer-links" aria-label="Footer navigation">
+
+        <a href="./pouchDown-privacy-tos.html">
+          Privacy Policy
+        </a>
+
+        <a href="./pouchDown-privacy-tos.html">
+          Terms of Use
+        </a>
+
+        <a href="mailto:lisaemly+pdprivacy@gmail.com">
+          Contact
+        </a>
+
+        <a
+          href="#download"
+          aria-label="Download pouchDown on the App Store"
+          class="app-store-button"
+        >
+          <!-- Apple icon -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.96-2.54 4.09l.01-.01zM12.03 7.25C11.88 5.02 13.69 3.18 15.76 3c.29 2.58-2.34 4.5-3.73 4.25z"/>
+          </svg>
+
+          App Store
+        </a>
+
+      </nav>
+
+
+      <p class="copyright">
+        © <span id="year"></span> pouchDown. All rights reserved.
+      </p>
+
+    </div>
+  </footer>
+
+
+  <script>
+    const date = new Date();
+
+    document.getElementById("last-updated").textContent =
+      date.toLocaleDateString(undefined, {
+        year: "numeric",
+        month: "long",
+        day: "numeric"
+      });
+
+    document.getElementById("year").textContent =
+      date.getFullYear();
+  </script>
+
+</body>
+</html>
