@@ -192,7 +192,28 @@
       line-height: 1.75;
     }
 
+    .tos {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      color: var(--primary-light);
+      font-size: 14px;
+      line-height: 1.75;
+    }
+
     .policy-section h2 {
+      margin: 0;
+
+      color: var(--foreground);
+      font-size: 24px;
+      line-height: 1.4;
+      font-weight: 600;
+      letter-spacing: -0.015em;
+    }
+
+    .policy-section h3 {
       margin: 0;
 
       color: var(--foreground);
@@ -399,24 +420,25 @@
         Privacy Policy + Terms of Use
       </h1>
 
-      <h2 class="policy">
-        Privacy Policy
-      </h2>
-      <p class="last-updated">
-        Last updated: <span id="last-updated"></span>
-      </p>
-
-
       <div class="policy">
+        <section class="policy-section">
+          <h2 id="privacy" class="policy">
+            Privacy Policy
+          </h2>
 
-        <p>
-          pouchDown helps you quit nicotine pouches. We believe that
-          journey is personal. This policy explains what we do (and
-          don't do) with your information.
-        </p>
+          <p class="last-updated">
+            Last updated: <span id="last-updated"></span>
+          </p>
+
+          <p>
+            pouchDown helps you quit nicotine pouches. We believe that
+            journey is personal. This policy explains what we do (and
+            don't do) with your information.
+          </p>
+        </section>
 
         <section class="policy-section">
-          <h2>No account required</h2>
+          <h3>No account required</h3>
           <p>
             You do not need to create an account, provide an email, or
             give us your name to use pouchDown. The app works on your
@@ -426,7 +448,7 @@
 
 
         <section class="policy-section">
-          <h2>Your data stays on your device</h2>
+          <h3>Your data stays on your device</h3>
           <p>
             Your logs, cravings, streaks, and progress
             information are stored locally on your iPhone. We do not
@@ -437,7 +459,7 @@
 
 
         <section class="policy-section">
-          <h2>We don't sell or share your data</h2>
+          <h3>We don't sell or share your data</h3>
           <p>
             We do not sell, rent, or share personal information with
             advertisers, data brokers, or other third parties. Because
@@ -448,7 +470,7 @@
 
 
         <section class="policy-section">
-          <h2>Analytics and diagnostics</h2>
+          <h3>Analytics and diagnostics</h3>
           <p>
             We may use Apple-provided crash reporting or anonymous
             analytics to understand app stability and usage trends.
@@ -459,7 +481,7 @@
 
 
         <section class="policy-section">
-          <h2>App Store purchases</h2>
+          <h3>App Store purchases</h3>
           <p>
             Transactions are handled by Apple through the App Store.
             We do not collect or store your payment information. Apple
@@ -470,35 +492,83 @@
 
 
         <section class="policy-section">
-          <h2>Children's privacy</h2>
+          <h3>Children's privacy</h3>
           <p>
             pouchDown is not intended for children under 18. We do not
-            knowingly collect information from children.
+           collect information from anyone, including children.
           </p>
         </section>
 
 
         <section class="policy-section">
-          <h2>Changes to this policy</h2>
+          <h3>Changes to this policy</h3>
           <p>
             We may update this Privacy Policy from time to time. If we
             make material changes, we will update the date above and
             notify you through the app or this website.
           </p>
         </section>
+      </div>
 
-
+      <div class="policy tos">
         <section class="policy-section">
-          <h2>Contact us</h2>
+          <h2 id="terms-of-use" class="policy">
+            Terms of Use
+          </h2>
+
+          <p class="last-updated">
+            Last updated: <span id="last-updated"></span>
+          </p>
+
           <p>
-            Questions about privacy?
-            <a href="mailto:lisaemly+pdprivacy@gmail.com">
-              Email us.
-            </a>
+            pouchDown helps you quit nicotine pouches. We believe that
+            journey is personal. This policy explains what we do (and
+            don't do) with your information.
           </p>
         </section>
 
+        <section class="policy-section">
+          <h3>No account required</h3>
+          <p>
+            You do not need to create an account, provide an email, or
+            give us your name to use pouchDown. The app works on your
+            device without connecting to a pouchDown account system.
+          </p>
+        </section>
+
+
+        <section class="policy-section">
+          <h3>Your data stays on your device</h3>
+          <p>
+            Your logs, cravings, streaks, and progress
+            information are stored locally on your iPhone. We do not
+            upload, sync, or back up this data to our servers. If you
+            delete the app, that local data is removed.
+          </p>
+        </section>
+
+        <section class="policy-section">
+          <h3>We don't sell or share your data</h3>
+          <p>
+            We do not sell, rent, or share personal information with
+            advertisers, data brokers, or other third parties. Because
+            most data is stored locally, we do not have access to it in
+            the first place.
+          </p>
+        </section>
       </div>
+
+      <section class="policy-section">
+        <br>
+        <br>
+        <h2>Contact us</h2>
+        <p>
+          Questions about privacy or our terms of use?
+          <a href="mailto:lisaemly+pdprivacy@gmail.com">
+            Email us.
+          </a>
+        </p>
+      </section>
     </div>
   </main>
 
@@ -520,11 +590,11 @@
 
       <nav class="footer-links" aria-label="Footer navigation">
 
-        <a href="./pouchDown-privacy-tos.html">
+        <a href="./pouchDown-privacy-tos.html#privacy">
           Privacy Policy
         </a>
 
-        <a href="./pouchDown-privacy-tos.html">
+        <a href="./pouchDown-privacy-tos.html#terms-of-use">
           Terms of Use
         </a>
 
