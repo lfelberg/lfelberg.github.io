@@ -427,7 +427,7 @@
           </h2>
 
           <p class="last-updated">
-            Last updated: <span id="last-updated"></span>
+            Last updated: <span id="last-updated-privacy"></span>
           </p>
 
           <p>
@@ -517,7 +517,7 @@
           </h2>
 
           <p class="last-updated">
-            Last updated: <span id="last-updated"></span>
+            Last updated: <span id="last-updated-tos"></span>
           </p>
 
           <p>
@@ -634,7 +634,14 @@
   <script>
     const date = new Date();
 
-    document.getElementById("last-updated").textContent =
+    document.getElementById("last-updated-privacy").textContent =
+      date.toLocaleDateString(undefined, {
+        year: "numeric",
+        month: "long",
+        day: "numeric"
+      });
+
+    document.getElementById("last-updated-tos").textContent =
       date.toLocaleDateString(undefined, {
         year: "numeric",
         month: "long",
