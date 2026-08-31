@@ -1,0 +1,74 @@
+/* Soft Landing — shared styles (fonts, animation, base) */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap');
+
+:root {
+  --brand-peach: oklch(0.885 0.065 51);
+  --brand-pink: oklch(0.842 0.079 8);
+  --cream: oklch(0.987 0.007 75);
+  --warm-gray: oklch(0.45 0.02 45);
+  --ink: oklch(0.16 0.005 60);
+  --card: oklch(1 0 0);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Nunito", ui-rounded, system-ui, sans-serif;
+  background-color: var(--cream);
+  color: var(--warm-gray);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: color-mix(in oklch, var(--brand-pink) 20%, transparent);
+}
+
+@keyframes gentle-float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-gentle-float {
+  animation: gentle-float 6s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-gentle-float {
+    animation: none;
+  }
+}
+
+/* House-with-heart icon, standing in for the app icon asset */
+.softlanding-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--brand-peach), var(--brand-pink));
+}
+
+/* Decorative "atmosphere" panel standing in for the hero photograph */
+.atmosphere-art {
+  background:
+    radial-gradient(circle at 30% 25%, color-mix(in oklch, var(--brand-peach) 55%, white) 0%, transparent 45%),
+    radial-gradient(circle at 75% 65%, color-mix(in oklch, var(--brand-pink) 50%, white) 0%, transparent 50%),
+    linear-gradient(160deg, var(--cream), color-mix(in oklch, var(--brand-peach) 25%, var(--cream)));
+}
+
+.cta {
+  background-image: linear-gradient(to top, rgba(253, 230, 229), rgba(252, 232, 227))
+}
+
+.peach-circle {
+  background: var(--brand-peach);
+}
+
+.peach {
+  background: rgba(255, 245, 240)
+}
+
+.pink {
+  background: rgba(254, 241, 243);
+}
