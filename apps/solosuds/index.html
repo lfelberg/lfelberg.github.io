@@ -144,6 +144,17 @@
         </a>
       </div>
     </section>
+
+    <section id="contact" class="wrap section-contact">
+      <div class="contact-panel">
+        <div>
+          <p class="contact-eyebrow">We’re here to help</p>
+          <h2>Questions between jobs?</h2>
+          <p>Whether you need help getting started, have an idea for SoloSuds, or simply want to say hello, send us a note.</p>
+        </div>
+        <a data-contact-link class="contact-button">Email SoloSuds</a>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
@@ -155,6 +166,7 @@
       <div class="footer-links">
         <a href="privacy.html">Privacy</a>
         <a href="terms.html">Terms</a>
+        <a data-contact-link>Contact</a>
       </div>
       <p id="year-line">© SoloSuds. Made for people who clean houses.</p>
     </div>
@@ -163,6 +175,12 @@
   <script>
     document.getElementById("year-line").textContent =
       "© " + new Date().getFullYear() + " SoloSuds. Made for people who clean houses.";
+
+    const contactAddress = [108,105,115,97,101,109,108,121,43,115,111,108,111,115,117,100,115,64,103,109,97,105,108,46,99,111,109]
+      .map((code) => String.fromCharCode(code)).join("");
+    document.querySelectorAll("[data-contact-link]").forEach((link) => {
+      link.href = `mailto:${contactAddress}`;
+    });
   </script>
 </body>
 </html>
