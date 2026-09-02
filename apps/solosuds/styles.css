@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Bubbl — shared design tokens & base styles
+   SoloSuds — shared design tokens & base styles
    Converted from the Tailwind v4 @theme block
    ========================================================================== */
 
@@ -115,6 +115,8 @@ img {
 
 .brand img {
   border-radius: 0.75rem;
+  width:2rem;
+  height:2rem;
 }
 
 .brand span {
@@ -389,8 +391,63 @@ img {
   opacity: 0.9;
 }
 
-.pricing-panel .btn {
+.pricing-panel .btn,
+.pricing-panel .app-store-badge {
   margin-top: 2.25rem;
+}
+
+.app-store-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-width: 12.5rem;
+  border: 1px solid color-mix(in oklch, white 82%, transparent);
+  border-radius: 0.9rem;
+  background: white;
+  color: var(--deep);
+  padding: 0.7rem 1.15rem;
+  text-align: left;
+  box-shadow: 0 14px 30px -14px oklch(0.18 0.04 235 / 0.6);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background-color 0.18s ease;
+}
+
+.app-store-badge:hover {
+  transform: translateY(-2px);
+  background-color: var(--primary-foreground);
+  box-shadow: 0 18px 36px -14px oklch(0.18 0.04 235 / 0.72);
+}
+
+.app-store-badge:focus-visible {
+  outline: 3px solid var(--pink);
+  outline-offset: 4px;
+}
+
+.app-store-badge svg {
+  width: 1.9rem;
+  height: 1.9rem;
+  flex: 0 0 auto;
+  fill: currentColor;
+}
+
+.app-store-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1;
+}
+
+.app-store-copy small {
+  margin-bottom: 0.22rem;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.app-store-copy strong {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 /* Footer */
