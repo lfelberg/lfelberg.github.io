@@ -385,6 +385,27 @@
   }
   .cta-demo-btn:hover { transform: scale(1.05); }
 
+  /* ---------- Contact ---------- */
+  .contact-section { padding: 0 24px 96px; }
+  .contact-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    border: 1px solid var(--border);
+    border-radius: 32px;
+    background: var(--card);
+    padding: 48px;
+    box-shadow: 0 20px 40px -24px rgba(0,0,0,.25);
+  }
+  .contact-copy { max-width: 680px; }
+  .contact-label { margin-bottom: 10px; color: var(--brand); font-family: var(--font-mono); font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; }
+  .contact-box h2 { margin-bottom: 12px; font-size: 36px; letter-spacing: -.03em; }
+  .contact-box p { color: var(--muted); line-height: 1.7; }
+  .contact-button { flex: 0 0 auto; border-radius: 12px; background: var(--brand); color: #fff; padding: 14px 24px; font-weight: 700; transition: transform .2s ease; }
+  .contact-button:hover { transform: translateY(-2px); }
+  @media (max-width: 700px) { .contact-box { align-items: stretch; flex-direction: column; padding: 32px 24px; } .contact-button { text-align: center; } }
+
   /* ---------- Footer ---------- */
   footer {
     border-top: 1px solid var(--border);
@@ -441,6 +462,7 @@
       <div class="nav-links">
         <a href="#features">Features</a>
         <a href="#download">Download</a>
+        <a href="#contact">Contact</a>
       </div>
       <a href="#download" class="nav-cta">GET THE APP</a>
     </div>
@@ -531,6 +553,20 @@
     </div>
   </section>
 
+  <!-- Contact -->
+  <section id="contact" class="contact-section">
+    <div class="wrap">
+      <div class="contact-box">
+        <div class="contact-copy">
+          <p class="contact-label">Property support</p>
+          <h2>Let’s keep your portfolio moving.</h2>
+          <p>Questions about LeaseLedger, your account, or managing a growing portfolio? Reach out and we’ll help you find the next step.</p>
+        </div>
+        <a data-contact-link class="contact-button">Email LeaseLedger</a>
+      </div>
+    </div>
+  </section>
+
   <!-- Footer -->
   <footer>
     <div class="footer-inner">
@@ -541,12 +577,22 @@
       <div class="footer-links">
         <a href="./privacy-tos.html#privacy">Privacy</a>
         <a href="./privacy-tos.html#privacy">Terms</a>
-        <a href="mailto:lisaemly-leaseledger@gmail.com">Support</a>
+        <a data-contact-link>Support</a>
         <a href="#" class="brand-link">App Store</a>
       </div>
       <p class="footer-copy">© 2026 LFELBERG.</p>
     </div>
   </footer>
+
+  <script>
+    (() => {
+      const address = [108,105,115,97,101,109,108,121,43,108,101,97,115,101,108,101,100,103,101,114,64,103,109,97,105,108,46,99,111,109]
+        .map((code) => String.fromCharCode(code)).join("");
+      document.querySelectorAll("[data-contact-link]").forEach((link) => {
+        link.href = `mailto:${address}`;
+      });
+    })();
+  </script>
 
 </body>
 </html>

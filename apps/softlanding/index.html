@@ -179,6 +179,20 @@
     </div>
   </section>
 
+  <!-- Contact -->
+  <section id="contact" class="px-6 pb-24">
+    <div class="mx-auto max-w-3xl rounded-[48px] bg-card p-10 text-center shadow-lg shadow-brand-peach/10 ring-1 ring-ink/5 md:p-16">
+      <p class="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-brand-pink">Here when you need us</p>
+      <h2 class="mb-4 text-3xl font-semibold text-ink">Let’s keep in touch.</h2>
+      <p class="mx-auto mb-8 max-w-[48ch] leading-relaxed">
+        Questions, thoughtful feedback, or a little help with Soft Landing? Send us a note and we’ll reply with care.
+      </p>
+      <a data-contact-link class="inline-flex rounded-full bg-ink px-7 py-3 text-sm font-medium text-cream transition-transform hover:scale-[1.02]">
+        Email Soft Landing
+      </a>
+    </div>
+  </section>
+
   <!-- Footer -->
   <footer class="border-t border-brand-peach/20 px-6 py-12">
     <div class="mx-auto flex max-w-5xl flex-col items-center justify-between gap-6 opacity-60 md:flex-row">
@@ -190,10 +204,21 @@
       <div class="flex gap-8 text-xs font-medium">
         <a href="./privacy.html" class="hover:text-ink">Privacy</a>
         <a href="./terms.html" class="hover:text-ink">Terms</a>
+        <a data-contact-link class="hover:text-ink">Contact</a>
         <a href="#" class="hover:text-ink">Instagram</a>
       </div>
     </div>
   </footer>
+
+  <script>
+    (() => {
+      const address = [108,105,115,97,101,109,108,121,43,115,111,102,116,108,97,110,100,105,110,103,64,103,109,97,105,108,46,99,111,109]
+        .map((code) => String.fromCharCode(code)).join("");
+      document.querySelectorAll("[data-contact-link]").forEach((link) => {
+        link.href = `mailto:${address}`;
+      });
+    })();
+  </script>
 
 </body>
 </html>
