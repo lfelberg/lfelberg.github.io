@@ -17,11 +17,15 @@
         <meta name="twitter:card" content="summary_large_image" />
         <link rel="stylesheet" href="styles.css" />
         <script src="script.js" defer></script>
+        <link rel="icon" href="bakeprice.ico">
     </head>
     <body>
         <header class="nav-shell">
             <nav class="wrap nav" aria-label="Main navigation">
-                <a class="brand" href="index.html"><span class="brand-mark">B</span>BakePrice</a>
+                <a class="brand" href="index.html">
+                    <img class="brand-mark" src="bakeprice-icon.png" alt="Bakeprice app icon">
+                    BakePrice
+                </a>
                 <div class="nav-links">
                     <a href="#calculator">Calculator</a><a href="#invoicing">Invoicing</a><a href="#pricing">Pricing</a
                     ><a href="#contact">Contact</a><a class="btn btn-primary btn-sm" href="#pricing">Get Started</a>
@@ -215,7 +219,10 @@
         <footer class="dark-footer" id="pricing">
             <div class="wrap footer-grid">
                 <div>
-                    <a class="brand footer-brand" href="index.html"><span class="brand-mark">B</span>BakePrice</a>
+                    <a class="brand" href="index.html">
+                        <img class="brand-mark" src="bakeprice-icon.png" alt="Bakeprice app icon">
+                        BakePrice
+                    </a>
                     <blockquote>
                         <p class="quote-text">
                             “I used to spend 4 hours every Sunday just doing math. Now I spend it dreaming up new croissant flavors.”
@@ -228,17 +235,12 @@
                 <div>
                     <p class="kicker">Ready to rise?</p>
                     <p class="footer-cta">Join 2,000+ bakers pricing for profit.</p>
-                    <form class="signup" id="signup-form">
-                        <input
-                            type="email"
-                            required
-                            aria-label="Email address"
-                            placeholder="baker@pastryshop.com"
-                        /><button class="btn btn-primary" type="submit">Start Free</button>
-                    </form>
-                    <p class="signup-success" id="signup-success" role="status">
-                        You’re on the list — we’ll be in touch before the first batch rises.
-                    </p>
+                    <a class="app-store-button" href="#" aria-label="Download BakePrice on the App Store">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8.9-.19 1.77-.87 3.28-.78 1.16.09 2.03.55 2.61 1.39-2.4 1.44-1.99 4.61.46 5.5-.6 1.57-1.38 3.13-1.43 3.06ZM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25Z" />
+                        </svg>
+                        <span><small>Download on the</small><strong>App Store</strong></span>
+                    </a>
                     <div class="footer-links">
                         <a href="terms.html">Terms</a><a href="privacy.html">Privacy</a><a href="#">Instagram</a
                         >

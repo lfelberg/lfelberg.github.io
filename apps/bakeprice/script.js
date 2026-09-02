@@ -34,12 +34,4 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
   });
-
-  const signupForm = document.querySelector("#signup-form");
-  const signupSuccess = document.querySelector("#signup-success");
-  signupForm?.addEventListener("submit", (event) => {
-    event.preventDefault();
-    signupForm.hidden = true;
-    if (signupSuccess) signupSuccess.style.display = "block";
-  });
 });
