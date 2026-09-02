@@ -57,8 +57,9 @@ body {
     linear-gradient(160deg, var(--cream), color-mix(in oklch, var(--brand-peach) 25%, var(--cream)));
 }
 
-.cta {
-  background-image: linear-gradient(to top, rgba(253, 230, 229), rgba(252, 232, 227))
+.cta-band {
+  width: 100%;
+  background-color: rgba(254, 241, 243, 0.8);
 }
 
 .peach-circle {

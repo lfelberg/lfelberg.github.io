@@ -1,69 +1,219 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Flowcraft — Pilates Lesson Planner for Teachers</title>
-  <meta name="description" content="Plan, build, and teach beautiful Pilates lessons with Flowcraft. The iOS app designed for Pilates instructors.">
-  <meta property="og:title" content="Flowcraft — Pilates Lesson Planner for Teachers">
-  <meta property="og:description" content="Plan, build, and teach beautiful Pilates lessons with Flowcraft. The iOS app designed for Pilates instructors.">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header class="site-header">
-    <nav class="wrap nav" aria-label="Main navigation">
-      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">F</span>Flowcraft</a>
-      <div class="nav-links"><a href="#features">Features</a><a href="#how-it-works">How it works</a><a href="#contact">Contact</a><a class="button" href="#download">Get Flowcraft</a></div>
-    </nav>
-  </header>
-  <main>
-    <section class="hero"><div class="wrap hero-grid">
-      <div>
-        <span class="eyebrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 3-1.5 4.5L6 9l4.5 1.5L12 15l1.5-4.5L18 9l-4.5-1.5L12 3Z"/></svg>Built for Pilates teachers</span>
-        <h1>Plan lessons with calm, clear intention.</h1>
-        <p class="lead">Flowcraft helps Pilates instructors build thoughtful, flowing classes in minutes. Drag, drop, and teach with confidence.</p>
-        <div class="actions"><a class="button button-dark" href="#download"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8.9-.19 1.77-.87 3.28-.78 1.16.09 2.03.55 2.61 1.39-2.4 1.44-1.99 4.61.46 5.5-.6 1.57-1.38 3.13-1.43 3.06ZM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25Z"/></svg>Download on the App Store</a><a class="button" href="#features">Explore features</a></div>
-        <div class="checks"><span class="check">✓ Free for 30 days</span><span class="check">✓ No credit card</span></div>
-      </div>
-      <div class="preview-wrap"><div class="preview" aria-label="Preview of a Flowcraft lesson plan">
-        <div class="preview-top"><div><div class="preview-title">Morning Reformer Flow</div><div class="preview-date">Tuesday · 9:30 AM</div></div><span class="eyebrow">45 min</span></div>
-        <div class="lesson"><div class="lesson-row"><strong>Warm up &amp; breath</strong><span>8 min</span></div><div class="lesson-bar"><i style="width:36%"></i></div></div>
-        <div class="lesson"><div class="lesson-row"><strong>Footwork series</strong><span>12 min</span></div><div class="lesson-bar"><i style="width:58%"></i></div></div>
-        <div class="lesson"><div class="lesson-row"><strong>Long stretch</strong><span>10 min</span></div><div class="lesson-bar"><i style="width:48%"></i></div></div>
-        <div class="lesson"><div class="lesson-row"><strong>Cool down</strong><span>5 min</span></div><div class="lesson-bar"><i style="width:25%"></i></div></div>
-      </div></div>
-    </div></section>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Flowcraft: Pilates Lesson Planner for Teachers</title>
+        <meta
+            name="description"
+            content="Plan, build, and teach beautiful Pilates lessons with Flowcraft. The iOS app designed for Pilates instructors."
+        />
+        <meta property="og:title" content="Flowcraft: Pilates Lesson Planner for Teachers" />
+        <meta
+            property="og:description"
+            content="Plan, build, and teach beautiful Pilates lessons with Flowcraft. The iOS app designed for Pilates instructors."
+        />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header class="site-header">
+            <nav class="wrap nav" aria-label="Main navigation">
+                <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">F</span>Flowcraft</a>
+                <div class="nav-links">
+                    <a href="#features">Features</a><a href="#how-it-works">How it works</a
+                    ><a href="#contact">Contact</a><a class="button" href="#download">Get Flowcraft</a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="hero">
+                <div class="wrap hero-grid">
+                    <div>
+                        <span class="eyebrow"
+                            ><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="m12 3-1.5 4.5L6 9l4.5 1.5L12 15l1.5-4.5L18 9l-4.5-1.5L12 3Z" /></svg
+                            >Built for Pilates teachers</span
+                        >
+                        <h1>Plan lessons with calm, clear intention.</h1>
+                        <p class="lead">
+                            Flowcraft helps Pilates instructors build thoughtful, flowing classes in minutes. Drag,
+                            drop, and teach with confidence.
+                        </p>
+                        <div class="actions">
+                            <a class="button button-dark" href="#download"
+                                ><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8.9-.19 1.77-.87 3.28-.78 1.16.09 2.03.55 2.61 1.39-2.4 1.44-1.99 4.61.46 5.5-.6 1.57-1.38 3.13-1.43 3.06ZM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25Z"
+                                    /></svg
+                                >Download on the App Store</a
+                            ><a class="button" href="#features">Explore features</a>
+                        </div>
+                        <div class="checks">
+                            <span class="check">✓ Free for 7 days</span><span class="check">✓ No credit card</span>
+                        </div>
+                    </div>
+                    <div class="preview-wrap">
+                        <div class="preview" aria-label="Preview of a Flowcraft lesson plan">
+                            <div class="preview-top">
+                                <div>
+                                    <div class="preview-title">Morning Reformer Flow</div>
+                                    <div class="preview-date">Tuesday · 9:30 AM</div>
+                                </div>
+                                <span class="eyebrow">45 min</span>
+                            </div>
+                            <div class="lesson">
+                                <div class="lesson-row"><strong>Warm up &amp; breath</strong><span>8 min</span></div>
+                                <div class="lesson-bar"><i style="width: 36%"></i></div>
+                            </div>
+                            <div class="lesson">
+                                <div class="lesson-row"><strong>Footwork series</strong><span>12 min</span></div>
+                                <div class="lesson-bar"><i style="width: 58%"></i></div>
+                            </div>
+                            <div class="lesson">
+                                <div class="lesson-row"><strong>Long stretch</strong><span>10 min</span></div>
+                                <div class="lesson-bar"><i style="width: 48%"></i></div>
+                            </div>
+                            <div class="lesson">
+                                <div class="lesson-row"><strong>Cool down</strong><span>5 min</span></div>
+                                <div class="lesson-bar"><i style="width: 25%"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-    <section class="section" id="features"><div class="wrap"><div class="section-heading"><h2>Everything you need to craft a class</h2><p>From sequence planning to timing cues, Flowcraft keeps your teaching flow organized and intuitive.</p></div>
-      <div class="grid-3">
-        <article class="card"><div class="card-icon">↕</div><h3>Build sequences</h3><p>Drag and drop exercises into flowing lessons. Reorder, duplicate, and refine in seconds.</p></article>
-        <article class="card"><div class="card-icon">▦</div><h3>Plan your week</h3><p>Schedule classes, set themes, and keep your entire teaching calendar in one calm place.</p></article>
-        <article class="card"><div class="card-icon">▷</div><h3>Teach with focus</h3><p>Follow your lesson plan with clear timing cues and notes, so you stay present with your clients.</p></article>
-        <article class="card"><div class="card-icon">✦</div><h3>Exercise library</h3><p>A curated library of Pilates movements with prompts for breath, setup, and progression.</p></article>
-        <article class="card"><div class="card-icon">✓</div><h3>Track progress</h3><p>Log client goals, progressions, and class history to personalize every session.</p></article>
-        <article class="card"><div class="card-icon">●</div><h3>Designed for iOS</h3><p>A native iOS experience made for your iPhone and iPad, online or offline in the studio.</p></article>
-      </div>
-    </div></section>
+            <section class="section" id="features">
+                <div class="wrap">
+                    <div class="section-heading">
+                        <h2>Everything you need to craft a class</h2>
+                        <p>
+                            From sequence planning to timing cues, Flowcraft keeps your teaching flow organized and
+                            intuitive.
+                        </p>
+                    </div>
+                    <div class="grid-3">
+                        <article class="card">
+                            <div class="card-icon">↕</div>
+                            <h3>Build sequences</h3>
+                            <p>
+                                Drag and drop exercises into flowing lessons. Reorder, duplicate, and refine in seconds.
+                            </p>
+                        </article>
+                        <article class="card">
+                            <div class="card-icon">▦</div>
+                            <h3>Plan your week</h3>
+                            <p>
+                                Schedule classes, set themes, and keep your entire teaching calendar in one calm place.
+                            </p>
+                        </article>
+                        <article class="card">
+                            <div class="card-icon">▷</div>
+                            <h3>Teach with focus</h3>
+                            <p>
+                                Follow your lesson plan with clear timing cues and notes, so you stay present with your
+                                clients.
+                            </p>
+                        </article>
+                        <article class="card">
+                            <div class="card-icon">✦</div>
+                            <h3>Exercise library</h3>
+                            <p>
+                                A curated library of Pilates movements with prompts for breath, setup, and progression.
+                            </p>
+                        </article>
+                        <article class="card">
+                            <div class="card-icon">✓</div>
+                            <h3>Track progress</h3>
+                            <p>Log client goals, progressions, and class history to personalize every session.</p>
+                        </article>
+                        <article class="card">
+                            <div class="card-icon">●</div>
+                            <h3>Designed for iOS</h3>
+                            <p>
+                                A native iOS experience made for your iPhone, online or offline in the studio.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
 
-    <section class="section section-tint" id="how-it-works"><div class="wrap"><div class="section-heading"><h2>Three steps to your next class</h2><p>No more scattered notes. Plan your lesson in the time it takes to brew your morning tea.</p></div><div class="grid-3">
-      <article class="card step-card"><span class="step">01</span><h3>Choose your focus</h3><p>Pick a theme, equipment, or client goal to guide your lesson.</p></article>
-      <article class="card step-card"><span class="step">02</span><h3>Build your flow</h3><p>Add exercises from your library, set durations, and arrange your sequence.</p></article>
-      <article class="card step-card"><span class="step">03</span><h3>Teach confidently</h3><p>Open your plan during class and follow clear cues without losing your rhythm.</p></article>
-    </div></div></section>
+            <section class="section section-tint" id="how-it-works">
+                <div class="wrap">
+                    <div class="section-heading">
+                        <h2>Three steps to your next class</h2>
+                        <p>No more scattered notes. Plan your lesson in the time it takes to brew your morning tea.</p>
+                    </div>
+                    <div class="grid-3">
+                        <article class="card step-card">
+                            <span class="step">01</span>
+                            <h3>Choose your focus</h3>
+                            <p>Pick a theme, equipment, or client goal to guide your lesson.</p>
+                        </article>
+                        <article class="card step-card">
+                            <span class="step">02</span>
+                            <h3>Build your flow</h3>
+                            <p>Add exercises from your library, set durations, and arrange your sequence.</p>
+                        </article>
+                        <article class="card step-card">
+                            <span class="step">03</span>
+                            <h3>Teach confidently</h3>
+                            <p>Open your plan during class and follow clear cues without losing your rhythm.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
 
-    <section class="section"><div class="wrap teacher"><div><h2>Made by teachers, for teachers</h2><p>We know the feeling of planning a class between sessions, in the car, or late at night. Flowcraft is designed to fit into the rhythm of your teaching life.</p><ul><li>✓ Unlimited lesson plans and client notes</li><li>✓ Timer and cues for seamless teaching</li><li>✓ Export and share plans with assistants</li></ul></div><div class="quote"><blockquote>“Flowcraft turned my lesson planning from a Sunday-night stress into something I actually enjoy. I walk into every class feeling prepared.”</blockquote><cite><strong>Elena R.</strong><br>Pilates teacher, Barcelona</cite></div></div></section>
-    <section class="section" id="download"><div class="wrap"><div class="cta"><h2>Bring calm to your lesson planning</h2><p>Download Flowcraft today and spend less time organizing and more time teaching.</p><a class="button" href="#">Download on the App Store</a></div></div></section>
-    <section class="section section-tint" id="contact">
-      <div class="narrow contact-section">
-        <span class="eyebrow">Get in touch</span>
-        <h2>We’d love to hear from you.</h2>
-        <p>Have a question about Flowcraft, need help with the app, or want to share feedback? Send us a note and we’ll get back to you.</p>
-        <a class="button button-dark" href="mailto:hello@flowcraft.app">hello@flowcraft.app</a>
-      </div>
-    </section>
-  </main>
-  <footer class="footer"><div class="wrap footer-inner"><span>© 2026 Flowcraft</span><div class="footer-links"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div></div></footer>
-</body>
+            <section class="section">
+                <div class="wrap teacher">
+                    <div>
+                        <h2>Made by teachers, for teachers</h2>
+                        <p>
+                            We know the feeling of planning a class between sessions, in the car, or late at night.
+                            Flowcraft is designed to fit into the rhythm of your teaching life.
+                        </p>
+                        <ul>
+                            <li>✓ Unlimited lesson plans and client notes</li>
+                            <li>✓ Timer and cues for seamless teaching</li>
+                            <li>✓ Export and share plans with assistants</li>
+                        </ul>
+                    </div>
+                    <div class="quote">
+                        <blockquote>
+                            “Flowcraft turned my lesson planning from a Sunday-night stress into something I actually
+                            enjoy. I walk into every class feeling prepared.”
+                        </blockquote>
+                        <cite><strong>Elena R.</strong><br />Pilates teacher, Oakland</cite>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="download">
+                <div class="wrap">
+                    <div class="cta">
+                        <h2>Bring calm to your lesson planning</h2>
+                        <p>Download Flowcraft today and spend less time organizing and more time teaching.</p>
+                        <a class="button button-sage" href="#">Download on the App Store</a>
+                    </div>
+                </div>
+            </section>
+            <section class="section section-tint" id="contact">
+                <div class="narrow contact-section">
+                    <span class="eyebrow">Get in touch</span>
+                    <h2>We’d love to hear from you.</h2>
+                    <p>
+                        Have a question about Flowcraft, need help with the app, or want to share feedback? Send us a
+                        note and we’ll get back to you.
+                    </p>
+                    <a class="button button-dark" href="mailto:lisaemly+flowcraft@gmail.com">contact flowcraft</a>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="wrap footer-inner">
+                <span>© 2026 Flowcraft</span>
+                <div class="footer-links"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div>
+            </div>
+        </footer>
+    </body>
 </html>
