@@ -62,6 +62,19 @@ body {
   background-color: rgba(254, 241, 243, 0.8);
 }
 
+.journal-wash {
+  background:
+    radial-gradient(circle at 28% 30%, color-mix(in oklch, var(--brand-peach) 75%, white), transparent 34%),
+    radial-gradient(circle at 72% 66%, color-mix(in oklch, var(--brand-pink) 55%, white), transparent 38%),
+    var(--cream);
+}
+
+.philosophy-wash {
+  background:
+    linear-gradient(135deg, color-mix(in oklch, var(--brand-peach) 55%, white), transparent 70%),
+    linear-gradient(315deg, color-mix(in oklch, var(--brand-pink) 50%, white), var(--cream));
+}
+
 .peach-circle {
   background: var(--brand-peach);
 }

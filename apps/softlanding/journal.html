@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Journal — Soft Landing</title>
+<meta name="description" content="Gentle notes on caring for your home without pressure, perfection, or guilt." />
+<meta property="og:title" content="The Journal — Soft Landing" />
+<meta property="og:description" content="Gentle notes on home care, rest, and small rhythms that make a space feel lighter." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" href="softlanding.ico" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config={theme:{extend:{colors:{cream:"oklch(0.987 0.007 75)","warm-gray":"oklch(0.45 0.02 45)",ink:"oklch(0.16 0.005 60)",card:"oklch(1 0 0)","brand-peach":"oklch(0.885 0.065 51)","brand-pink":"oklch(0.842 0.079 8)"},fontFamily:{sans:["Nunito","ui-rounded","system-ui","sans-serif"]}}}};
+</script>
+<link rel="stylesheet" href="softLanding.css" />
+</head>
+<body class="min-h-screen bg-cream font-sans text-warm-gray antialiased selection:bg-brand-pink/20">
+  <nav class="mx-auto flex max-w-5xl items-center justify-between px-6 py-8">
+    <a href="index.html" class="flex items-center gap-2"><img class="softlanding-icon size-8 rounded-[10px] ring-1 ring-ink/5" src="softlanding-icon.png" alt=""><span class="font-semibold tracking-tight">Soft Landing</span></a>
+    <a href="index.html" class="text-sm font-medium transition-colors hover:text-ink">Back home</a>
+  </nav>
+
+  <main>
+    <header class="px-6 pb-20 pt-14 text-center">
+      <p class="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-brand-pink">The Journal</p>
+      <h1 class="mx-auto max-w-3xl text-4xl font-semibold leading-tight text-ink md:text-6xl">A quiet place for thoughts about home.</h1>
+      <p class="mx-auto mt-6 max-w-[56ch] text-lg leading-relaxed">Notes on caring for your space gently—without turning your life into another list to finish.</p>
+    </header>
+
+    <section class="px-6 pb-24">
+      <div class="mx-auto grid max-w-5xl gap-8 md:grid-cols-2">
+        <article class="overflow-hidden rounded-[36px] bg-card shadow-lg shadow-brand-peach/10 ring-1 ring-ink/5 md:col-span-2 md:grid md:grid-cols-2">
+          <div class="journal-wash min-h-64"></div>
+          <div class="p-8 md:p-12">
+            <p class="mb-4 text-xs font-semibold uppercase tracking-[0.16em] text-brand-pink">Starting gently · 6 min read</p>
+            <h2 class="mb-4 text-3xl font-semibold leading-tight text-ink">The five-minute reset that asks almost nothing of you</h2>
+            <p class="leading-relaxed">Choose one small surface, clear only what belongs elsewhere, and stop when the timer ends. A room does not need to be finished to feel cared for.</p>
+            <a href="#five-minute-reset" class="mt-6 inline-flex text-sm font-semibold text-ink underline decoration-brand-peach decoration-2 underline-offset-4">Read the note</a>
+          </div>
+        </article>
+
+        <article id="five-minute-reset" class="rounded-[32px] bg-card p-8 ring-1 ring-ink/5">
+          <p class="mb-3 text-xs font-semibold uppercase tracking-[0.16em] text-brand-pink">Rest &amp; rhythm · 4 min read</p>
+          <h2 class="mb-4 text-2xl font-semibold text-ink">A home can hold you before it is tidy</h2>
+          <p class="leading-relaxed">Comfort is not a reward for completing every task. Open the curtains, make somewhere to sit, and let the room support the version of you who is here today.</p>
+        </article>
+
+        <article class="rounded-[32px] bg-card p-8 ring-1 ring-ink/5">
+          <p class="mb-3 text-xs font-semibold uppercase tracking-[0.16em] text-brand-pink">Kind routines · 5 min read</p>
+          <h2 class="mb-4 text-2xl font-semibold text-ink">What if “done” changed from day to day?</h2>
+          <p class="leading-relaxed">Some days done is a clear kitchen. Some days it is one rinsed cup. Flexible definitions of enough make care sustainable—and leave room for real life.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta-band px-6 py-20 text-center"><div class="mx-auto max-w-2xl"><h2 class="mb-4 text-3xl font-semibold text-ink">A softer home begins with one small thing.</h2><p class="mb-8">Return to Soft Landing whenever you need a kind place to begin.</p><a href="index.html" class="inline-flex rounded-full bg-ink px-7 py-3 text-sm font-medium text-cream">Explore Soft Landing</a></div></section>
+  </main>
+  <footer class="border-t border-brand-peach/20 px-6 py-10"><div class="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-4 text-xs opacity-60"><span>© 2026 Soft Landing App</span><div class="flex gap-6"><a href="philosophy.html">Our philosophy</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div></div></footer>
+</body>
+</html>
+
