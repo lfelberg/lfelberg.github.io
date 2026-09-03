@@ -154,7 +154,7 @@
     document.getElementById("year-line").textContent =
       "© " + new Date().getFullYear() + " SoloSuds. Made for people who clean houses.";
 
-    const contactAddress = [108,105,115,97,101,109,108,121,43,115,111,108,111,115,117,100,115,64,103,109,97,105,108,46,99,111,109]
+    const contactAddress = [115,111,108,111,115,117,100,115,64,102,101,108,98,101,114,103,115,116,117,100,105,111,46,99,111,109]
       .map((code) => String.fromCharCode(code)).join("");
     document.querySelectorAll("[data-contact-link]").forEach((link) => {
       link.href = `mailto:${contactAddress}`;

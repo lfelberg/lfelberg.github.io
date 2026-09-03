@@ -212,7 +212,7 @@
 
   <script>
     (() => {
-      const address = [108,105,115,97,101,109,108,121,43,115,111,102,116,108,97,110,100,105,110,103,64,103,109,97,105,108,46,99,111,109]
+      const address = [115,111,102,116,108,97,110,100,105,110,103,64,102,101,108,98,101,114,103,115,116,117,100,105,111,46,99,111,109]
         .map((code) => String.fromCharCode(code)).join("");
       document.querySelectorAll("[data-contact-link]").forEach((link) => {
         link.href = `mailto:${address}`;
