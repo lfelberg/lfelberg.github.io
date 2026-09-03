@@ -604,3 +604,25 @@ img {
   margin-top: 0.5rem;
   color: var(--muted-foreground);
 }
+
+.page-sections ul {
+  margin: 0.75rem 0 0;
+  padding-left: 1.25rem;
+  color: var(--muted-foreground);
+}
+
+.page-sections li + li {
+  margin-top: 0.5rem;
+}
+
+.page-sections a {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+.page-sections a:hover {
+  color: var(--deep);
+}
