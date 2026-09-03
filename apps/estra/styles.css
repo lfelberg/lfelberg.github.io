@@ -130,14 +130,11 @@ img {
 }
 
 .brand-mark {
-    display: grid;
     width: 2.25rem;
     height: 2.25rem;
-    place-items: center;
     border-radius: 0.8rem;
-    background-image: linear-gradient(to bottom, var(--plum), var(--rose) 55%, var(--coral));
-    color: var(--cream);
-    font-size: 1rem;
+    object-fit: cover;
+    box-shadow: 0 0.3rem 0.8rem oklch(0.34 0.078 331.5 / 14%);
 }
 
 .nav-links,
